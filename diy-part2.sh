@@ -25,3 +25,6 @@ git apply $GITHUB_WORKSPACE/patches/*.patch
 # Modify golang version
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+
+# Remove gost patch
+rm -rf /feeds/kenzo/gost/patches/010-go1-20.patch
